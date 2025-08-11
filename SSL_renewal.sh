@@ -7,8 +7,8 @@ LOG_DIR="/home/ubuntu/ssl_logs"
 LOG_FILE="$LOG_DIR/renewal_$(date +%F).log"
 
 # === TELEGRAM CONFIG ===
-TELEGRAM_BOT_TOKEN="8242856179:AAEN0t0vtR6NtMXiwwESl9IIRlVPSXxX078"
-TELEGRAM_CHAT_ID="1317133221"
+TELEGRAM_BOT_TOKEN="your telegram bot token"
+TELEGRAM_CHAT_ID="your chat ID"
 
 send_telegram() {
   curl -s -X POST "https://api.telegram.org/bot$TELEGRAM_BOT_TOKEN/sendMessage" \
